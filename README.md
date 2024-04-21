@@ -11,4 +11,14 @@
 8.   ![alt text](./Pictures/5.png)
 9.   **Способ 3**
 10.   В строке, начинающейся с linux16, заменяем ro на rw init=/sysroot/bin/sh и нажимаем сtrl-x - так же на CentOS - все получилось
+11.   **Установить систему с LVM, после чего переименовать VG**
+12.   CentOS была установлена с LVM
+13.   ```  vgrename ls -l OtusRoot
+14.    ![alt text](./Pictures/7.png)
+15. Далее правим /etc/fstab, /etc/default/grub, /boot/grub2/grub.cfg. Везде заменяем старое название на новое
+16.  ``` mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r) ```
+17.   ![alt text](./Pictures/8.png)
+18.   
+
+
 
