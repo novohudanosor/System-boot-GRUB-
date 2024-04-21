@@ -23,7 +23,7 @@
 20.   В нее поместим два скрипта: 1. module-setup.sh - который устанавливает модуль и вызывает скрипт test.sh   2. test.sh - собственно сам вызываемый скрипт, в нём у нас рисуется пингвинчик
 21.   mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)
 22.   dracut -f -v
-23.   ![alt text](./Pictures/9.png)
+23.   ![alt text](./Pictures/10.png)
 
 
 
