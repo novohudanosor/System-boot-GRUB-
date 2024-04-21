@@ -6,5 +6,9 @@
 3.  ![alt text](./Pictures/1.png)
 4.  ![alt text](./Pictures/2.png)
 5.  ![alt text](./Pictures/3.png)
-6. 
- 
+6.  **P.S.** т.к. у меня не получилось войти в систему Debian при загрузке командой ``` rd.break ```, установил ОС CentOS и изменил пароль как в ДЗ. Для Debian менял пароль root если при загрузке использовать ``` init=/bin/bash ```.
+7.  **Способ 2**
+ ![alt text](./Pictures/5.png)
+**Способ 3**
+В строке, начинающейся с linux16, заменяем ro на rw init=/sysroot/bin/sh и нажимаем сtrl-x - так же на CentOS - все получилось
+
