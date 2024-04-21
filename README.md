@@ -18,7 +18,12 @@
 15. Далее правим /etc/fstab, /etc/default/grub, /boot/grub2/grub.cfg. Везде заменяем старое название на новое
 16.  ``` mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r) ```
 17.   ![alt text](./Pictures/8.png)
-18.   
+18.   **Добавить модуль в initrd**
+19.   ``` mkdir /usr/lib/dracut/modules.d/01test ```
+20.   В нее поместим два скрипта: 1. module-setup.sh - который устанавливает модуль и вызывает скрипт test.sh   2. test.sh - собственно сам вызываемый скрипт, в нём у нас рисуется пингвинчик
+21.   mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)
+22.   dracut -f -v
+23.   ![alt text](./Pictures/9.png)
 
 
 
